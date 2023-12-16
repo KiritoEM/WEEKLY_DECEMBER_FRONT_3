@@ -5,7 +5,7 @@
     overflow: hidden;
     background-color: $alice;
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
     padding-left: 8%;
     @include container;
 
@@ -45,10 +45,21 @@
     }
 
     .section-content {
-        width: 100%;
+        width: max-content;
         display: flex;
         gap: 15px;
         overflow: hidden;
-        margin-top: 4.4rem;
+        margin-top: 4rem;
+    }
+
+    .testimonials-buttons {
+        display: flex;
+        margin-top: 3rem;
+        gap: 17px;
+
+        img {
+            width: 39.5px;
+            object-fit: contain;
+        }
     }
 }
