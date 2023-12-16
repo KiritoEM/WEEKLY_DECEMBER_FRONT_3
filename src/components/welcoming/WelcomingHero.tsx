@@ -2,7 +2,7 @@ const WelcomingHero = (): JSX.Element => {
   return (
     <section id="welcoming-hero">
       <div className="hero-shape1">
-        <img src="/images/Welcoming/hero-shape-1.svg" alt="" />
+        <img src="/images/Welcoming/hero-shape-1.png" alt="" />
       </div>
       <div className="content">
         <div className="title">

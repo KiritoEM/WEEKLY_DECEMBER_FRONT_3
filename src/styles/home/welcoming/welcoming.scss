@@ -1,9 +1,13 @@
 @import "./hero.scss";
+@import "./cover.scss";
+@import "./supported.scss";
+@import "./scribble.scss";
 
-#welcoming{
+#welcoming {
     width: 100%;
     overflow: hidden;
     margin-top: 3.7rem;
     background-color: $Champagne;
     height: min-content;
+    padding-bottom: 30px;
 }

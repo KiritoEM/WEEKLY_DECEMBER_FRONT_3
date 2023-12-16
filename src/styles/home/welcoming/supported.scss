@@ -1,0 +1,41 @@
+#welcoming-supported {
+    width: 100%;
+    display: flex;
+    @include container;
+
+    &__container {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        border-top: 3px solid rgb(158, 154, 154);
+        border-bottom: 1.5px solid $Davys-grey;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .section-header {
+            width: 20%;
+
+            h5 {
+                color: $Black;
+                font-weight: 600;
+            }
+        }
+
+        .section-icons{
+            display: flex;
+            width: 80%;
+            gap: 18%;
+            justify-content: flex-end;
+
+             img{
+                width: 90px;
+                object-fit: contain;
+             }
+
+             #youtube{
+                width: 150px;
+             }
+        }
+    }
+}

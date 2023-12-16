@@ -3,13 +3,16 @@
     min-height: 27rem;
     display: flex;
     justify-content: space-between;
-    padding-top: 3.2rem;
-    padding-bottom: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 7rem;
 
     .hero-shape1 {
         width: 20%;
         display: flex;
         justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+        top: 50px;
 
         img {
             width: 100%;
@@ -18,9 +21,12 @@
     }
 
     .hero-shape2 {
-        width: 12%;
+        width: 14%;
         display: flex;
-        margin: auto;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+        top: 50px;
 
         img {
             width: 138px;
@@ -43,6 +49,7 @@
                 font-weight: bolder;
                 font-size: 4.1em;
                 text-align: center;
+                line-height: 64px;
 
                 span {
                     color: $Vermillion;
@@ -66,14 +73,14 @@
             .btn {
                 text-transform: uppercase;
                 font-size: 12.7px;
-                padding-top: 16px;
-                padding-bottom: 16px;
-                padding-left: 39px;
-                padding-right: 39px;
+                padding-top: 17.5px;
+                padding-bottom: 17.5px;
+                padding-left: 41px;
+                padding-right: 41px;
                 font-weight: bold;
                 border-radius: 7px;
                 background-color: $Black;
-                box-shadow: 3.5px 3.5px rgb(189, 187, 187);
+                box-shadow: 4px 4px rgb(189, 187, 187);
                 color: #fff;
             }
         }
