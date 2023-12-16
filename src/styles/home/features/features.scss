@@ -1,14 +1,13 @@
-@import "./testimonials-card.scss";
+@import "./features-card.scss";
 
-#testimonials {
+#features {
     width: 100%;
     overflow: hidden;
-    background-color: $alice;
-    padding-top: 5.6rem;
-    padding-bottom: 5rem;
-    padding-left: 8%;
     position: relative;
-    z-index: 0;
+    z-index: 50;
+    top: -2rem;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
     @include container;
 
     .section-header {
@@ -19,26 +18,26 @@
             justify-content: center;
             align-items: center;
             position: relative;
-            left: -33px;
+            left: 75px;
 
             .sparkle {
+                margin-top: -75px;
                 position: relative;
-                top: -27px;
+                left: -87px;
 
                 img {
-                    width: 60px;
+                    width: 160px;
                 }
             }
 
             h1 {
                 font-weight: 700;
                 margin-bottom: 0;
-                color: $Black;
             }
         }
 
         .text {
-            margin-top: 10px;
+            margin-top: 0;
 
             p {
                 color: $Davys-grey;
@@ -47,22 +46,8 @@
         }
     }
 
-    .section-content {
-        width: max-content;
-        display: flex;
-        gap: 15px;
-        overflow: hidden;
+    .section-content{
         margin-top: 4rem;
-    }
-
-    .testimonials-buttons {
-        display: flex;
-        margin-top: 3rem;
-        gap: 17px;
-
-        img {
-            width: 39.5px;
-            object-fit: contain;
-        }
+        width: 100%;
     }
 }
