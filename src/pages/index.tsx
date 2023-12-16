@@ -1,10 +1,10 @@
-import "./../styles/global.scss";
+import Layout from "./Layout";
 
 const home = () : JSX.Element => {
   return (
-    <div>
-        
-    </div>
+    <Layout>
+
+    </Layout>
   );
 };
 

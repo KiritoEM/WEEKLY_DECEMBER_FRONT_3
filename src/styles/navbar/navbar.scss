@@ -1,0 +1,11 @@
+#nav{
+    width: 100%;
+    overflow: hidden;
+
+     &__container{
+        width: 100%;
+        overflow: hidden;
+        height: 5rem;
+        background-color: rgb(52, 131, 201);
+     }
+}
