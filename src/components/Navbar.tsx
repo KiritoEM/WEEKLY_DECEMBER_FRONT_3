@@ -1,5 +1,6 @@
 import MenuItems from "./Navbar/MenuItems";
 import NavLogo from "./Navbar/NavLogo";
+import NavButtons from "./Navbar/NavButtons";
 
 const Navbar = (): JSX.Element => {
   return (
@@ -9,7 +10,9 @@ const Navbar = (): JSX.Element => {
           <NavLogo />
           <MenuItems />
         </section>
-        <section id="nav-buttons"></section>
+        <section id="nav-buttons">
+          <NavButtons />
+        </section>
       </div>
     </nav>
   );

@@ -3,12 +3,22 @@ interface ImenuItems {
   icon?: string;
 }
 
+interface InavButtons {
+  id: string;
+  value: string;
+}
+
 export default function navData() {
   const menuItems: ImenuItems[] = [
     { label: "Episodes" },
     { label: "About" },
-    { label: "More", icon: "" },
+    { label: "More", icon: "/images/Arrow-Down.png" },
   ];
 
-  return { menuItems };
+  const navButtons: InavButtons[] = [
+    { id: "btn-1", value: "Recent episodes" },
+    { id: "btn-2", value: "Subscribe" },
+  ];
+
+  return { menuItems, navButtons };
 }

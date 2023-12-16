@@ -6,7 +6,9 @@ const MenuItems = (): JSX.Element => {
     <div className="menu-items">
       <ul>
         {menuItems.map((item, index) => (
-          <li>{item.label}</li>
+          <li key={index}>
+            {item.label} <img src={item.icon} alt="" />
+          </li>
         ))}
       </ul>
     </div>
