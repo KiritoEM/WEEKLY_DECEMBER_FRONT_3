@@ -12,4 +12,6 @@ export default function featuresData() {
     { img: "/images/features/icon-5.png", title: "Exclusive Episodes & Merch" },
     { img: "/images/features/icon-6.png", title: "And much more!" },
   ];
+
+  return { featuresContent };
 }
