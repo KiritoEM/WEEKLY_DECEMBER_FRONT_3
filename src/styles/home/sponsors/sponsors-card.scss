@@ -2,6 +2,7 @@
     width: 100%;
     height: max-content;
 
+
     .price {
         width: 100%;
         border: 1.5px solid $Black;
@@ -9,18 +10,28 @@
         padding: 40px 30px 25px 30px;
 
         .header {
+            .title {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
 
-            h3 {
-                color: $Black;
-                font-weight: 700;
+                h3 {
+                    color: $Black;
+                    font-weight: 700;
+                }
             }
 
-            p {
-                color: $Davys-grey;
+
+            .text {
                 margin-top: 2rem;
-                font-weight: 500;
-                font-size: 14px;
+
+                p {
+                    color: $Davys-grey;
+                    font-weight: 500;
+                    font-size: 14px;
+                }
             }
+
         }
 
         .button-price {
@@ -45,18 +56,65 @@
                 }
             }
 
-            .price-value{
+            .price-value {
 
-                 h5{
+                h5 {
                     color: $Vermillion;
                     font-weight: 600;
-                     
-                    span{
+
+                    span {
                         font-size: 14px;
                         color: $Davys-grey;
                     }
-                 }
+                }
             }
         }
+    }
+
+    .benefits {
+        margin-top: 22px;
+        width: 100%;
+        height: 20rem;
+        border: 1.5px solid $Black;
+        border-radius: 7px;
+        padding: 40px 30px 25px 30px;
+
+        p {
+            font-size: 14px;
+            color: $Davys-grey;
+            font-weight: 700;
+        }
+
+        .points {
+
+            p {
+                color: $Black;
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+#family {
+    .price {
+        border: 1.5px solid $Vermillion;
+        background-color: $Champagne;
+
+        .title {
+            p {
+                font-size: 13.5px;
+                border-radius: 5px;
+                font-weight: 600;
+                padding: 6px;
+                color: #fff;
+                background-color: $Vermillion;
+            }
+        }
+    }
+
+    .benefits {
+        border: 1.5px solid $Vermillion;
+        background-color: $Champagne;
     }
 }
