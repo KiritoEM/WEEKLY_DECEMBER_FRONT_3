@@ -1,5 +1,6 @@
 import AboutCard from "./About/AboutCard";
 import aboutData from "@/helper/dataHelper/aboutData";
+import AboutQuote from "./About/AboutQuote";
 
 const About = (): JSX.Element => {
   const { aboutContent } = aboutData();
@@ -17,6 +18,7 @@ const About = (): JSX.Element => {
           ))}
         </div>
       </div>
+      <AboutQuote />
     </section>
   );
 };
