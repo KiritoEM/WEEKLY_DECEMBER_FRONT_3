@@ -22,6 +22,7 @@ const home = (): JSX.Element => {
         <Features />
         <Scribble2 top="-2rem" />
         <Episodes />
+        <Scribble2 top="-9rem" />
       </section>
     </Layout>
   );
