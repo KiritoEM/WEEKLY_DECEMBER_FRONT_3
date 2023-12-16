@@ -4,6 +4,7 @@ import Welcoming from "@/components/Welcoming";
 import About from "@/components/About";
 import Scribble1 from "@/components/Scribble1";
 import Testimonials from "@/components/Testimonials";
+import Scribble2 from "@/components/Scribble2";
 
 const home = (): JSX.Element => {
   return (
@@ -13,7 +14,9 @@ const home = (): JSX.Element => {
         <Welcoming />
         <Scribble1 />
         <About />
+        <Scribble2 top="4rem"/>
         <Testimonials />
+        <Scribble2 top="-4rem"/>
       </section>
     </Layout>
   );

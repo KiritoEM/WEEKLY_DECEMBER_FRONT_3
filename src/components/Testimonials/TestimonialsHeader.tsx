@@ -5,7 +5,7 @@ const TestimonialsHeader = (): JSX.Element => {
         <div className="sparkle">
           <img src="/images/testimonials/Sparkle.png" alt="" />
         </div>
-        <h2>What our listeners say</h2>
+        <h1>What our listeners say</h1>
       </div>
       <div className="text">
         <p>Their experience throughout every platform</p>
