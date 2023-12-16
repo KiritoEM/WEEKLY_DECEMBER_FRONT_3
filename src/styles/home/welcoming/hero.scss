@@ -21,9 +21,11 @@
     }
 
     .hero-shape2 {
-        width: 14%;
+        width: 20%;
         display: flex;
-        justify-content: flex-start;
+        position: relative;
+        right: 45px;
+        justify-content: flex-end;
         align-items: flex-start;
         position: relative;
         top: 50px;

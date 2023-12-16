@@ -1,0 +1,43 @@
+#sponsors {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -10rem;
+    padding-top: 3rem;
+
+    .section-header {
+        .title {
+            height: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: -33px;
+
+            .sparkle {
+                position: relative;
+                top: -30px;
+                left: 32px;
+
+                img {
+                    width: 90px;
+                }
+            }
+
+            h1 {
+                font-weight: 700;
+                margin-bottom: 0;
+                color: $Black;
+            }
+        }
+
+        .text {
+            margin-top: -2px;
+
+            p {
+                color: $Davys-grey;
+                text-align: center;
+            }
+        }
+    }
+}
