@@ -1,11 +1,14 @@
 import MetaTitle from "@/components/MetaTitle";
 import Layout from "./Layout";
+import Welcoming from "@/components/Welcoming";
 
 const home = (): JSX.Element => {
   return (
     <Layout>
       <MetaTitle title="Your Daily Podcast" />
-      <h1></h1>
+      <section id="home-page">
+        <Welcoming />
+      </section>
     </Layout>
   );
 };
