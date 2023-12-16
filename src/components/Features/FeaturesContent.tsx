@@ -12,6 +12,9 @@ const FeaturesContent = (): JSX.Element => {
           </div>
         ))}
       </div>
+      <div className="pricing-btn">
+          <button className="btn">See Pricing</button>
+      </div>
     </div>
   );
 };

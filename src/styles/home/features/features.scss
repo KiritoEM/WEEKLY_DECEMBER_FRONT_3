@@ -5,8 +5,8 @@
     overflow: hidden;
     position: relative;
     z-index: 50;
-    top: -2rem;
-    padding-bottom: 2rem;
+    top: -6rem;
+    padding-bottom: 0;
     padding-top: 3rem;
     @include container;
 
@@ -26,18 +26,21 @@
                 left: -87px;
 
                 img {
-                    width: 160px;
+                    width: 190px;
                 }
             }
 
             h1 {
                 font-weight: 700;
                 margin-bottom: 0;
+                color: $Black;
             }
         }
 
         .text {
             margin-top: 0;
+            position: relative;
+            top: -21px;
 
             p {
                 color: $Davys-grey;
@@ -46,8 +49,24 @@
         }
     }
 
-    .section-content{
-        margin-top: 4rem;
+    .section-content {
+        margin-top: 3rem;
         width: 100%;
+
+        .pricing-btn {
+            text-align: center;
+            margin-top: 5rem;
+
+            .btn {
+                text-transform: uppercase;
+                font-size: 12.7px;
+                padding: 17px 32px;
+                font-weight: bold;
+                border-radius: 7px;
+                background-color: $Black;
+                box-shadow: 4px 4px rgb(189, 187, 187);
+                color: #fff;
+            }
+        }
     }
 }
