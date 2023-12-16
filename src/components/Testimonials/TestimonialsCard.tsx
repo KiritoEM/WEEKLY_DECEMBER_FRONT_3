@@ -1,4 +1,16 @@
-const TestimonialsCard = (): JSX.Element => {
+interface ItestimonialProps {
+  avatar: string;
+  name: string;
+  plateform_icon: string;
+  plateform_name: string;
+}
+
+const TestimonialsCard: React.FC<ItestimonialProps> = ({
+  avatar,
+  name,
+  plateform_icon,
+  plateform_name,
+}): JSX.Element => {
   return (
     <div className="testimonials-card">
       <div className="quotes">
@@ -13,13 +25,14 @@ const TestimonialsCard = (): JSX.Element => {
       <div className="author">
         <div className="author__profile">
           <p>
-            <img src="/images/testimonials/avatar-1.png" alt="" />
+            <img src={avatar} alt="" />
+            {name}
           </p>
         </div>
         <div className="author__plateform">
           <p>
-            <img src="" alt="" />
-            Spotify
+            <img src={plateform_icon} alt="" />
+            {plateform_name}
           </p>
         </div>
       </div>
