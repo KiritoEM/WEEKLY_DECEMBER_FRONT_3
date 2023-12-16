@@ -1,7 +1,6 @@
 import WelcomingHero from "./welcoming/WelcomingHero";
 import WelcomingCover from "./welcoming/WelcomingCover";
 import WelcomingSupported from "./welcoming/WelcomingSupported";
-import WelcomingScribble from "./welcoming/WelcomingScribble";
 
 const Welcoming = (): JSX.Element => {
   return (
@@ -9,7 +8,6 @@ const Welcoming = (): JSX.Element => {
       <WelcomingHero />
       <WelcomingCover />
       <WelcomingSupported />
-      <WelcomingScribble />
     </section>
   );
 };

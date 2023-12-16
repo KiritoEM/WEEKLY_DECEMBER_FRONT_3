@@ -1,0 +1,16 @@
+#about{
+    background-color: #FFFFFF;
+    width: 100%;
+    overflow: hidden;
+
+     .title{
+        text-align: center;
+        width: 40%;
+        margin: auto;
+
+         h2{
+            color: $Black;
+            font-weight: 600;
+         }
+     }
+}

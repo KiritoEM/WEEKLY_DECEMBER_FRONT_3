@@ -1,7 +1,6 @@
 @import "./hero.scss";
 @import "./cover.scss";
 @import "./supported.scss";
-@import "./scribble.scss";
 
 #welcoming {
     width: 100%;
@@ -9,5 +8,5 @@
     margin-top: 3.7rem;
     background-color: $Champagne;
     height: min-content;
-    padding-bottom: 30px;
+    padding-bottom: 7rem;
 }
