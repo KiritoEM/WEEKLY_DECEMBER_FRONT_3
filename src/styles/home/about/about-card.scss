@@ -1,0 +1,24 @@
+.about-card{
+    width: 100%;
+
+     &__cover{
+         width: 100%;
+         text-align: center;
+
+           img{
+            width: 167px;
+           }
+     }
+
+     &__text{
+        text-align: center;
+        width: 74%;
+        margin: 2rem auto;
+
+         p{
+            color: $Black;
+            font-size: 14px;
+            font-weight: 500;
+         }
+     }
+}

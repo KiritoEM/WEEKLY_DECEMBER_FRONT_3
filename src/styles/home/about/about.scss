@@ -1,16 +1,23 @@
-#about{
-    background-color: #FFFFFF;
-    width: 100%;
-    overflow: hidden;
+@import "./about-card.scss";
 
-     .title{
-        text-align: center;
-        width: 40%;
-        margin: auto;
+#about {
+   background-color: #FFFFFF;
+   width: 100%;
+   overflow: hidden;
+   @include container;
 
-         h2{
-            color: $Black;
-            font-weight: 600;
-         }
-     }
+   .title {
+      text-align: center;
+      width: 40%;
+      margin: auto;
+
+      h2 {
+         color: $Black;
+         font-weight: 700;
+      }
+   }
+
+   .content {
+      margin-top: 4rem;
+   }
 }
