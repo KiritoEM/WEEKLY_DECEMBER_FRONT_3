@@ -1,8 +1,12 @@
+@import "./sponsors-card.scss";
+
 #sponsors {
     width: 100%;
     overflow: hidden;
     margin-top: -10rem;
     padding-top: 3rem;
+    padding-bottom: 5rem;
+    @include container;
 
     .section-header {
         .title {
@@ -39,5 +43,10 @@
                 text-align: center;
             }
         }
+    }
+
+    .section-content{
+        width: 100%;
+        margin-top: 6rem;
     }
 }

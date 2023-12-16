@@ -1,0 +1,62 @@
+.sponsors-card {
+    width: 100%;
+    height: max-content;
+
+    .price {
+        width: 100%;
+        border: 1.5px solid $Black;
+        border-radius: 7px;
+        padding: 40px 30px 25px 30px;
+
+        .header {
+
+            h3 {
+                color: $Black;
+                font-weight: 700;
+            }
+
+            p {
+                color: $Davys-grey;
+                margin-top: 2rem;
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+
+        .button-price {
+            margin-top: 3rem;
+            position: relative;
+            right: 15px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            .button {
+
+                .btn {
+                    text-transform: uppercase;
+                    font-size: 12.7px;
+                    padding: 14px 28px;
+                    font-weight: bold;
+                    border-radius: 7px;
+                    background-color: $Black;
+                    box-shadow: 4px 4px rgb(189, 187, 187);
+                    color: #fff;
+                }
+            }
+
+            .price-value{
+
+                 h5{
+                    color: $Vermillion;
+                    font-weight: 600;
+                     
+                    span{
+                        font-size: 14px;
+                        color: $Davys-grey;
+                    }
+                 }
+            }
+        }
+    }
+}
