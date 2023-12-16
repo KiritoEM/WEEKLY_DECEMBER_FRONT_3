@@ -35,6 +35,17 @@ export default function sponsorsData() {
         { text: "Request Topic" },
       ],
     },
+    {
+        title: "Officiel",
+        price: "$29.99",
+        points: [
+          { text: "Everything in Tier 2" },
+          { text: "Exclusive Badge on Livestreaming" },
+          { text: "Become an Official Sponsor" },
+          { text: "Early Access to All Episodes" },
+          { text: "Free Stikers and Merch" },
+        ],
+      },
   ];
 
   return { sponsors };
