@@ -17,7 +17,7 @@ export default function Document() {
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700;800&display=swap"
           rel="stylesheet"
         />
         <link
