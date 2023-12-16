@@ -10,9 +10,11 @@
     .first-section {
         display: flex;
         flex-direction: row;
+        height: 12rem;
 
         .cover {
             width: 30%;
+            height: 100%;
 
             img {
                 width: 100%;
@@ -61,34 +63,52 @@
         }
     }
 
-    .second-section{
+    .second-section {
         width: 100%;
         display: flex;
         justify-content: space-between;
         margin-top: 8px;
 
-         .tags{
+        .tags {
             display: flex;
             gap: 8px;
 
-             .btn{
+            .btn {
                 border: 1px solid $Davys-grey;
                 color: $Davys-grey;
                 border-radius: 5px;
                 font-size: 14px;
                 font-weight: 500;
-             }
-         }
+            }
+        }
 
-         .hosted{
+        .hosted {
             height: 100%;
 
-             p{
+            p {
                 margin-bottom: 0;
                 color: $Davys-grey;
                 font-size: 14px;
                 font-weight: 700;
-             }
-         }
+            }
+        }
     }
+}
+
+#episodes-5,
+#episodes-4,
+#episodes-1 {
+
+    .title {
+
+        h5 {
+            color: $Black;
+        }
+    }
+}
+
+#episodes-2,
+#episodes-3,
+#episodes-6 {
+    box-shadow: 8px 8px $Pewter-blue;
 }

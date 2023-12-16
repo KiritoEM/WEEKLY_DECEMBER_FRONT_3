@@ -1,14 +1,32 @@
-const EpisodesCard = (): JSX.Element => {
+interface IepisodesProps {
+  id?: string;
+  img: string;
+  subtitle: string;
+  title: string;
+  tags: Itags[];
+}
+
+interface Itags {
+  label: string;
+}
+
+const EpisodesCard: React.FC<IepisodesProps> = ({
+  id,
+  img,
+  subtitle,
+  title,
+  tags,
+}): JSX.Element => {
   return (
-    <div className="episodes-card">
+    <div className="episodes-card" id={id}>
       <div className="first-section">
         <div className="cover">
-          <img src="/images/episodes/episode-1.png" alt="" />
+          <img src={img} alt="" />
         </div>
         <div className="header">
           <div className="title">
-            <h6>Eps. 6</h6>
-            <h5>Pandemic Becoming Endemic</h5>
+            <h6>{subtitle}</h6>
+            <h5>{title}</h5>
           </div>
           <div className="line"></div>
           <div className="text">
@@ -20,13 +38,19 @@ const EpisodesCard = (): JSX.Element => {
         </div>
       </div>
       <div className="second-section">
-          <div className="tags">
-              <button className="btn">Covid19</button>
-              <button className="btn">Health</button>
-          </div>
-          <div className="hosted">
-               <p>Hosted by: <img src="/images/episodes/host.png" alt="" /></p>
-          </div>
+        <div className="tags">
+          {tags.map((item, index) => (
+            <button className="btn" key={index}>
+              {" "}
+              {item.label}
+            </button>
+          ))}
+        </div>
+        <div className="hosted">
+          <p>
+            Hosted by: <img src="/images/episodes/host.png" alt="" />
+          </p>
+        </div>
       </div>
     </div>
   );
