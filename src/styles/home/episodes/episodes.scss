@@ -9,6 +9,7 @@
     position: relative;
     top: -6rem;
     padding-bottom: 5rem;
+    @include container;
 
     .section-header {
         .title {
@@ -38,5 +39,6 @@
 
     .section-content{
         width: 100%;
+        margin-top: 4.4rem;
     }
 }
