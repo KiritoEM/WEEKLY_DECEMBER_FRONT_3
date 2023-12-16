@@ -1,41 +1,54 @@
+@import "./testimonials-card.scss";
+
 #testimonials {
     width: 100%;
     overflow: hidden;
     background-color: $alice;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    padding-left: 8%;
     @include container;
 
-     .title{
-        height: 100%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        left: -33px;
-
-         .sparkle{
-            position: relative;
-            top: -27px;
-
-            img{
-                width: 60px;
-            }
-         }
-
-         h2{
-            font-weight: 700;
-            margin-bottom: 0;
-         }
-     }
-
-     .text{
-        margin-top: 10px;
-
-        p{
-            color: $Davys-grey;
+    .section-header {
+        .title {
+            height: 100%;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: -33px;
+
+            .sparkle {
+                position: relative;
+                top: -27px;
+
+                img {
+                    width: 60px;
+                }
+            }
+
+            h2 {
+                font-weight: 700;
+                margin-bottom: 0;
+            }
         }
-     }
+
+        .text {
+            margin-top: 10px;
+
+            p {
+                color: $Davys-grey;
+                text-align: center;
+            }
+        }
+    }
+
+    .section-content {
+        width: 100%;
+        display: flex;
+        gap: 17px;
+        overflow: hidden;
+        margin-top: 4.4rem;
+    }
 }

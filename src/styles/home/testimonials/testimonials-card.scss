@@ -1,0 +1,73 @@
+.testimonials-card {
+    width: 26rem;
+    height: max-content;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 32px;
+    padding-top: 50px;
+
+    .quotes {
+
+        img {
+            width: 30px;
+            object-fit: contain;
+        }
+    }
+
+    .text {
+        margin-top: 2.2rem;
+
+        p {
+            color: $Black;
+            font-weight: 500;
+            font-size: 14px;
+        }
+    }
+
+    .author {
+        margin-top: 2.2rem;
+        display: flex;
+        gap: 25px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+
+        &__profile {
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            p {
+                font-size: 13px;
+                font-weight: 500;
+                color: $Black;
+
+                img {
+                    position: relative;
+                    left: -10px;
+                    width: 40px;
+                }
+            }
+        }
+
+        &__plateform {
+            display: flex;
+            height: 100%;
+            position: relative;
+            top: -3px;
+
+            p {
+                font-size: 13px;
+                font-weight: 600;
+                color: $Black;
+                margin-bottom: 0;
+
+                img {
+                    position: relative;
+                    left: -10px;
+                }
+            }
+        }
+    }
+}
