@@ -10,7 +10,7 @@ const EpisodesContent = (): JSX.Element => {
       </div>
       <div className="row gy-4">
         {episodesContent.map((item, index) => (
-          <div className="col-6" key={index}>
+          <div className="col-lg-6" key={index}>
             <EpisodesCard {...item} />
           </div>
         ))}

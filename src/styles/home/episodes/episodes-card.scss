@@ -7,24 +7,58 @@
     background-color: #fff;
     gap: 7px;
 
+    @include screen(small){
+        padding-bottom: 30px;
+    }
+
     .first-section {
         display: flex;
         flex-direction: row;
         height: 12rem;
 
+        @include screen(small){
+            flex-direction: column;
+            height: max-content;
+        }
+
+        @include screen(medium){
+            height: max-content;
+        }
+
+
+        @include screen-x(1024px, 1100px) {
+           height: 13.4rem;
+        }
+
         .cover {
             width: 30%;
             height: 100%;
 
+            @include screen(small){
+                width: 100%;
+                height: 11rem;
+            }
+
             img {
                 width: 100%;
                 object-fit: contain;
+
+                @include screen(small){
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
             }
         }
 
         .header {
             width: 70%;
             padding: 17px;
+
+            @include screen(small){
+                width: 100%;
+            }
 
             .title {
                 display: flex;
@@ -69,6 +103,16 @@
         justify-content: space-between;
         margin-top: 8px;
 
+        @include screen(medium){
+            margin-top: 15px;
+        }
+
+        @include screen(small){
+            width: 100%;
+            flex-direction: column;
+            padding-left: 18px;
+        }
+
         .tags {
             display: flex;
             gap: 8px;
@@ -84,6 +128,10 @@
 
         .hosted {
             height: 100%;
+
+            @include screen(small){
+                margin-top: 13px;
+            }
 
             p {
                 margin-bottom: 0;

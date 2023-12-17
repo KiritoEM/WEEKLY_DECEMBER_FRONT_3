@@ -23,6 +23,10 @@
                 position: relative;
                 top: -27px;
 
+                @include screen(small){
+                    left: 30px;
+                }
+
                 img {
                     width: 60px;
                 }
