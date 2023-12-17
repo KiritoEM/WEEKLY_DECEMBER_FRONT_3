@@ -8,9 +8,9 @@ const Blogcontent = (): JSX.Element => {
       <div className="shape-1">
         <img src="/images/blog/shape-1.png" alt="" />
       </div>
-      <div className="row">
+      <div className="row gy-5 gy-lg-2">
         {blog.map((item, index) => (
-          <div className="col-6" key={index}>
+          <div className="col-lg-6" key={index}>
             <BlogCard {...item} />
           </div>
         ))}

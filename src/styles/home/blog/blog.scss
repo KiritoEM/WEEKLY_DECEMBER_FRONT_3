@@ -8,6 +8,10 @@
     padding-bottom: 0;
     @include container;
 
+    @include screen(small) {
+        padding-bottom: 6rem;
+    }
+
     .section-header {
         .title {
             height: 100%;
@@ -37,17 +41,34 @@
     .section-content {
         width: 100%;
         height: max-content;
-        margin-top: -3rem;
+        margin-top: -2rem;
 
 
         .shape-1 {
             position: relative;
-            top: 3.7rem;
+            top: 4rem;
             left: -56px;
             z-index: 40;
 
+            @include screen(small) {
+                left: -27px;
+                top: 2.8rem;
+            }
+
+            @include screen(medium) {
+                left: -50px;
+            }
+
             img {
                 width: 135px;
+
+                @include screen(small) {
+                    width: 86px;
+                }
+
+                @include screen(medium) {
+                    width: 105px;
+                }
             }
         }
 
@@ -58,8 +79,26 @@
             z-index: 40;
             text-align: end;
 
+            @include screen(small) {
+                left: 40px;
+                top: -2.5rem;
+            }
+
+            @include screen(medium) {
+                left: 80px;
+                top: -5rem;
+            }
+
             img {
                 width: 185px;
+
+                @include screen(small) {
+                    width: 110px;
+                }
+
+                @include screen(medium) {
+                    width: 150px;
+                }
             }
         }
     }
