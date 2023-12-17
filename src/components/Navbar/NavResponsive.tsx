@@ -11,13 +11,15 @@ const NavResponsive = (): JSX.Element => {
           </li>
         ))}
       </ul>
-      {navButtons.map((item, index) => (
-        <div className="button" key={index}>
-          <button className="btn" id={item.id}>
-            {item.value}
-          </button>
-        </div>
-      ))}
+      <div id="nav-buttons">
+        {navButtons.map((item, index) => (
+          <div className="button" key={index}>
+            <button className="btn" id={item.id}>
+              {item.value}
+            </button>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

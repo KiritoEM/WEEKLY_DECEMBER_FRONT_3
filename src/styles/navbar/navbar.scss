@@ -21,6 +21,7 @@
       @include screen(small){
          position: fixed;
          background-color: $Champagne;
+         box-shadow: 0 3px 5px rgba(143, 139, 139, 0.411);
       }
 
       #nav-header {
