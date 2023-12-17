@@ -29,6 +29,10 @@
                     flex-direction: column;
                 }
 
+                @include screen-x(1024px, 1117px) {
+                    flex-direction: column;
+                }
+
                 h3 {
                     color: $Black;
                     font-weight: 700;
@@ -135,8 +139,14 @@
                 padding: 6px;
                 color: #fff;
                 background-color: $Vermillion;
-                 
+
                 @include screen(small) {
+                    width: 145px;
+                    text-align: center;
+                    margin-top: 7px;
+                }
+
+                @include screen-x(1024px, 1117px) {
                     width: 145px;
                     text-align: center;
                     margin-top: 7px;
