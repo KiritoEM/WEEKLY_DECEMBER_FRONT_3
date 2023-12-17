@@ -35,9 +35,31 @@
 
     .section-content {
         width: 100%;
-        overflow: hidden;
         height: max-content;
-        margin-top: 4rem;
+        margin-top: -3rem;
         padding-bottom: 30px;
+
+        .shape-1 {
+            position: relative;
+            top: 3.7rem;
+            left: -56px;
+            z-index: 40;
+
+            img {
+                width: 135px;
+            }
+        }
+
+        .shape-2 {
+            position: relative;
+            top: -5.7rem;
+            left: 90px;
+            z-index: 40;
+            text-align: end;
+
+            img {
+                width: 185px;
+            }
+        }
     }
 }
