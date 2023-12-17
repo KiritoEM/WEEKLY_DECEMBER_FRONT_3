@@ -8,8 +8,8 @@ interface Iaction {
 
 const MenuIcons: React.FC<Iaction> = ({ action }): JSX.Element => {
   return (
-    <div className="menu-icons d-lg-none" onClick={action}>
-      <FontAwesomeIcon icon={faBars} className="icon" />
+    <div className="menu-icons d-lg-none">
+      <FontAwesomeIcon icon={faBars} className="icon" onClick={action} />
     </div>
   );
 };

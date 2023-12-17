@@ -6,6 +6,12 @@
     padding-top: 4rem;
     padding-bottom: 7rem;
 
+    @include screen(small){
+      padding-bottom: 5rem;           
+      height: max-content;
+      min-height: auto;
+    }
+
     .hero-shape1 {
         width: 20%;
         display: flex;
@@ -89,7 +95,8 @@
             text-align: center;
 
             @include screen(small){
-                width: 100%;       
+                width: 100%;    
+                margin-top: 0.5rem;   
             }
 
             p {
@@ -99,6 +106,10 @@
 
         .button {
             margin-top: 2rem;
+
+            @include screen(small){
+                margin-top: 0.8rem;
+            }
 
             .btn {
                 text-transform: uppercase;
@@ -114,7 +125,7 @@
                 color: #fff;
 
                 @include screen(small){
-                    padding: 14px 41px;
+                    padding: 14px 44px;
                     font-size: 11.6px;
                 }
             }

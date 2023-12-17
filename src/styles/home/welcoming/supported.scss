@@ -13,12 +13,24 @@
         padding-top: 30px;
         padding-bottom: 30px;
 
+        @include screen(small){
+            flex-direction: column;       
+        }
+
         .section-header {
             width: 20%;
+
+            @include screen(small){
+             width: 100%;   
+            }
 
             h5 {
                 color: $Black;
                 font-weight: 600;
+
+                @include screen(small){
+                    font-size: 16px;
+                }
             }
         }
 
@@ -29,13 +41,29 @@
             justify-content: flex-end;
             padding-right: 65px;
 
+            @include screen(small){
+              width: 100%;   
+              padding-right: 0;
+              gap: 15px;
+              justify-content: flex-start;
+              margin-top: 7px;
+            }
+
              img{
                 width: 90px;
                 object-fit: contain;
+                 
+                @include screen(small){
+                    width: 77px;
+                }
              }
 
              #youtube{
                 width: 150px;
+
+                @include screen(small){
+                    width: 85px;
+                }
              }
         }
     }

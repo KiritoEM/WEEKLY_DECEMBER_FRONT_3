@@ -4,11 +4,19 @@
    height: 100%;
    padding-bottom: 5rem;
 
+   @include screen(small){
+     padding-bottom: 4rem;            
+   }
+
    &__container {
       width: 100%;
       display: flex;
       flex-direction: row;
       gap: 17px;
+
+      @include screen(small){
+         width: 43rem;      
+      }
 
       .card {
          border-radius: 17px;
