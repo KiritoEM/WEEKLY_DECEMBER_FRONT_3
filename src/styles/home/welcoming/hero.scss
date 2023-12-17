@@ -14,6 +14,12 @@
         position: relative;
         top: 50px;
 
+        @include screen(small){
+            width: 135px;   
+            position: relative;      
+            left: 10px;
+        }
+
         img {
             width: 100%;
             object-fit: contain;
@@ -30,9 +36,18 @@
         position: relative;
         top: 50px;
 
+        @include screen(small){
+          width: 135px;     
+          right: 10px;    
+        }
+
         img {
             width: 138px;
             object-fit: contain;
+
+            @include screen(small){
+                width: 50px;       
+            }
         }
     }
 
@@ -44,6 +59,10 @@
         align-items: center;
         justify-content: flex-start;
 
+        @include screen(small){
+            width: 200%;           
+        }
+
         .title {
 
             h1 {
@@ -52,6 +71,11 @@
                 font-size: 4.1em;
                 text-align: center;
                 line-height: 64px;
+
+                @include screen(small){
+                    font-size: 34px;
+                    line-height: normal;
+                }
 
                 span {
                     color: $Vermillion;
@@ -63,6 +87,10 @@
             margin-top: 2rem;
             width: 37%;
             text-align: center;
+
+            @include screen(small){
+                width: 100%;       
+            }
 
             p {
                 color: $Davys-grey;
@@ -84,6 +112,11 @@
                 background-color: $Black;
                 box-shadow: 4px 4px rgb(189, 187, 187);
                 color: #fff;
+
+                @include screen(small){
+                    padding: 14px 41px;
+                    font-size: 11.6px;
+                }
             }
         }
     }
