@@ -27,7 +27,7 @@
         top: 50px;
 
         @include screen(small) {
-            width: 132px;
+            width: 125px;
             position: relative;
             left: 10px;
         }
@@ -53,7 +53,7 @@
         top: 50px;
 
         @include screen(small) {
-            width: 132px;
+            width: 125px;
             right: 10px;
         }
 
@@ -80,7 +80,7 @@
         justify-content: flex-start;
 
         @include screen(small) {
-            width: 100%;
+            width: 120%;
         }
 
         @include screen(medium) {

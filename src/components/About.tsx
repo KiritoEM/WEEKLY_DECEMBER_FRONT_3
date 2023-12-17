@@ -10,9 +10,9 @@ const About = (): JSX.Element => {
         <h2>Talk. Listen. Get inspired by every minute of it.</h2>
       </div>
       <div className="content">
-        <div className="row">
+        <div className="row gy-0 gy-md-2">
           {aboutContent.map((item, index) => (
-            <div className="col-6" key={index}>
+            <div className="col-md-6" key={index}>
               <AboutCard {...item} />
             </div>
           ))}
