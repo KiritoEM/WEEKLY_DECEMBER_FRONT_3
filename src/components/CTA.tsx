@@ -2,7 +2,9 @@ const CTA = (): JSX.Element => {
   return (
     <section id="CTA">
       <div className="shape-1">
-        <img src="" alt="" />
+        <div className="img">
+          <img src="/images/CTA/img-1.png" alt="" />
+        </div>
       </div>
       <div className="content">
         <div className="section-header">
@@ -25,9 +27,17 @@ const CTA = (): JSX.Element => {
               <img src="/images/Sparkle.png" alt="" />
             </div>
           </div>
+          <div className="social">
+            <p>Content also available on:</p>
+            <img src="/images/CTA/platform.png" alt="" />
+          </div>
         </div>
       </div>
-      <div className="shape-2"></div>
+      <div className="shape-2">
+        <div className="img">
+          <img src="/images/CTA/img-2.png" alt="" />
+        </div>
+      </div>
     </section>
   );
 };

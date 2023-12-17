@@ -2,6 +2,7 @@
 
 #blog {
     width: 100%;
+    height: max-content;
     overflow: hidden;
     padding-top: 0.6rem;
     padding-bottom: 0;
@@ -37,7 +38,7 @@
         width: 100%;
         height: max-content;
         margin-top: -3rem;
-        padding-bottom: 30px;
+
 
         .shape-1 {
             position: relative;
