@@ -30,7 +30,7 @@ const home = (): JSX.Element => {
         <Sponsors />
         <Scribble2 top="-2rem" />
         <Blog />
-        <Scribble3 top="-7rem" />
+        <Scribble3 top="-5rem" />
         <CTA />
       </section>
     </Layout>

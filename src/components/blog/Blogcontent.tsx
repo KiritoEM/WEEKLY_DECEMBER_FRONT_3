@@ -18,6 +18,9 @@ const Blogcontent = (): JSX.Element => {
       <div className="shape-2">
         <img src="/images/blog/shape-2.png" alt="" />
       </div>
+      <div className="all-blog">
+        <button className="btn">BROWSE ALL</button>
+      </div>
     </div>
   );
 };
