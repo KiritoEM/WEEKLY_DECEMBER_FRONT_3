@@ -6,6 +6,14 @@
     padding: 32px;
     padding-top: 50px;
 
+    @include screen(medium){
+        width: 24rem;
+    }
+
+    @include screen(small){
+        width: 10.6%;
+    }
+
     .quotes {
 
         img {
