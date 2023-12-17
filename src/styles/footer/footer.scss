@@ -7,14 +7,31 @@
     @include container;
     box-shadow: 0 -2px 2px rgb(189, 187, 187);
 
+    @include screen(small){
+        padding-top: 4rem;        
+        padding-bottom: 3rem;           
+    }
+
+    @include screen(medium){
+      padding-top: 6rem; 
+      padding-bottom: 3rem;    
+    }
+
     .header {
         .section-info {
+            @include screen(small){
+                text-align: center;           
+            }
 
             .logo-copyright {
                 display: flex;
                 flex-direction: row;
                 align-items: flex-end;
                 gap: 15px;
+
+                @include screen(small){
+                    justify-content: center;       
+                }
 
                 .copyright {
 
@@ -45,10 +62,23 @@
                 flex-direction: column;
                 gap: 20px;
 
+                @include screen(small){
+                    margin-left: 0;       
+                    padding-left: 0;
+                }
+
+                @include screen(small){
+                  text-align: center;       
+                }
+
                 li {
                     color: $Black;
                     font-size: 14px;
                     font-weight: 500;
+
+                    @include screen(small){
+                        font-size: 15px;   
+                    }
                 }
 
                 #colored-item {
@@ -58,6 +88,10 @@
         }
 
         .section-plateform {
+
+            @include screen(small){
+                text-align: center
+            }
 
             p {
                 color: $Davys-grey;
@@ -69,9 +103,18 @@
                 display: flex;
                 gap: 24px;
 
+                @include screen(small){
+                    gap: 18px;      
+                    justify-content: center; 
+                }
+
                 img {
                     width: 75px;
                     object-fit: contain;
+
+                    @include screen(small){
+                        width: 60px;   
+                    }
                 }
 
                 #icon-1 {
@@ -93,6 +136,10 @@
         display: flex;
         justify-content: space-between;
 
+        @include screen(small){
+            flex-direction: column;               
+        }
+
           .author{
 
             p{
@@ -108,6 +155,10 @@
           }
 
           .privacy{
+
+            @include screen(small){
+                margin-top: 10px;           
+            }
 
             p{
                 color: $Davys-grey;

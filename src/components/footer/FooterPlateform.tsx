@@ -21,7 +21,7 @@ const FooterPlateform: React.FC<IsocialIcon> = ({ icons }): JSX.Element => {
           ))}
         </div>
       </div>
-      <div className="app mt-5">
+      <div className="app mt-4">
          <p>App available on:</p>
          <div className="icons">
               <img src="/images/platform-2.png" alt="" />
