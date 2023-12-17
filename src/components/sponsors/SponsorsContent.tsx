@@ -8,9 +8,9 @@ const SponsorsContent = (): JSX.Element => {
       <div className="shape-1">
         <img src="/images/sponsors/shape-1.png" alt="" />
       </div>
-      <div className="row">
+      <div className="row gy-5 gy-md-2">
         {sponsors.map((item, index) => (
-          <div className="col-4" key={index}>
+          <div className="col-md-4" key={index}>
             <SponsorsCard {...item} />
           </div>
         ))}

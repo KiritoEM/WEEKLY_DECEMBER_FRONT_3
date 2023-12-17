@@ -16,10 +16,18 @@
         .header {
             height: 14rem;
 
+            @include screen(small) {
+                height: max-content;
+            }
+
             .title {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
+
+                @include screen(small) {
+                    flex-direction: column;
+                }
 
                 h3 {
                     color: $Black;
@@ -30,6 +38,10 @@
 
             .text {
                 margin-top: 2rem;
+
+                @include screen(small) {
+                    margin-top: 0.4rem;
+                }
 
                 p {
                     color: $Davys-grey;
@@ -46,6 +58,10 @@
             display: flex;
             width: 100%;
             justify-content: space-between;
+
+            @include screen(small) {
+                margin-top: 2.7rem;
+            }
 
             .button {
 
@@ -84,6 +100,11 @@
         border-radius: 7px;
         padding: 40px 30px 25px 30px;
 
+        @include screen(small) {
+            margin-top: 13px;
+            height: max-content;
+        }
+
         p {
             font-size: 14px;
             color: $Davys-grey;
@@ -114,6 +135,12 @@
                 padding: 6px;
                 color: #fff;
                 background-color: $Vermillion;
+                 
+                @include screen(small) {
+                    width: 145px;
+                    text-align: center;
+                    margin-top: 7px;
+                }
             }
         }
     }
