@@ -8,12 +8,14 @@ interface INavContext {
   openMenu: boolean;
   openOverlay: boolean;
   menuToogle: () => void;
+  menuClose: () => void | undefined;
 }
 
 interface IDefaultNavContext {
   openMenu: false;
   openOverlay: false;
   menuToogle: () => null;
+  menuClose: () => undefined;
 }
 const NavContext = createContext<INavContext | IDefaultNavContext | null>(null);
 
@@ -29,12 +31,18 @@ export const NavProvider: React.FC<IAuthProvider> = ({
     setOpenOverlay(!openOverlay);
   };
 
+  const menuClose = () => {
+    setOpenMenu(false);
+    setOpenOverlay(false);
+  };
+
   return (
     <NavContext.Provider
       value={{
         openMenu,
         openOverlay,
         menuToogle,
+        menuClose,
       }}
     >
       {children}

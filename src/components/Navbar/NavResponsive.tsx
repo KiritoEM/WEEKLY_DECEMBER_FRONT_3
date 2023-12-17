@@ -3,7 +3,7 @@ import { useNav } from "@/hooks/useNav";
 
 const NavResponsive = (): JSX.Element => {
   const { menuItems, navButtons } = navData();
-  const { openMenu } = useNav();
+  const { openMenu, menuClose } = useNav();
   return (
     <div
       className={`menu-responsive d-lg-none ${
@@ -12,7 +12,13 @@ const NavResponsive = (): JSX.Element => {
     >
       <ul>
         {menuItems.map((item, index) => (
-          <li key={index}>
+          <li
+            key={index}
+            onClick={() => {
+              item.action && item.action();
+              menuClose();
+            }}
+          >
             {item.label} <img src={item.icon} alt="" />
           </li>
         ))}
@@ -20,7 +26,14 @@ const NavResponsive = (): JSX.Element => {
       <div id="nav-buttons">
         {navButtons.map((item, index) => (
           <div className="button" key={index}>
-            <button className="btn" id={item.id}>
+            <button
+              className="btn"
+              id={item.id}
+              onClick={() => {
+                item.action && item.action();
+                menuClose();
+              }}
+            >
               {item.value}
             </button>
           </div>
