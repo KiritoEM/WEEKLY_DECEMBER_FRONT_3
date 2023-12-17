@@ -1,7 +1,11 @@
+@import "./blog-card.scss";
+
 #blog {
     width: 100%;
     overflow: hidden;
     padding-top: 0.6rem;
+    padding-bottom: 4rem;
+    @include container;
 
     .section-header {
         .title {
@@ -27,5 +31,13 @@
                 text-align: center;
             }
         }
+    }
+
+    .section-content {
+        width: 100%;
+        overflow: hidden;
+        height: max-content;
+        margin-top: 4rem;
+        padding-bottom: 30px;
     }
 }
