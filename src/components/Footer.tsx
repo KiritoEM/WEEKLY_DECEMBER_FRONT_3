@@ -19,18 +19,31 @@ const Footer = (): JSX.Element => {
 
   return (
     <section id="footer">
-      <div className="row">
-        <div className="col-3">
-          <Footerinfo />
+      <div className="header">
+        <div className="row">
+          <div className="col-3">
+            <Footerinfo />
+          </div>
+          <div className="col-3">
+            <FooterCard footerMenu01={footerMenu.footerMenu01} />
+          </div>
+          <div className="col-3">
+            <FooterCard footerMenu01={footerMenu.footerMenu02} />
+          </div>
+          <div className="col-3">
+            <FooterPlateform icons={socialIcons} />
+          </div>
         </div>
-        <div className="col-3">
-          <FooterCard footerMenu01={footerMenu.footerMenu01} />
+      </div>
+      <div className="line"></div>
+      <div className="footer-note mt-3">
+        <div className="author">
+          <p>
+            ©2022. All Rights Reserved. <span> Pod of Cast</span>
+          </p>
         </div>
-        <div className="col-3">
-          <FooterCard footerMenu01={footerMenu.footerMenu02} />
-        </div>
-        <div className="col-3">
-          <FooterPlateform icons={socialIcons} />
+        <div className="privacy">
+          <p>Terms • Privacy</p>
         </div>
       </div>
     </section>
