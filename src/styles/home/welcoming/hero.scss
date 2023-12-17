@@ -83,8 +83,8 @@
             width: 100%;
         }
 
-        @include screen(medium){
-          width: 70%;       
+        @include screen(medium) {
+            width: 70%;
         }
 
         .title {
@@ -101,9 +101,17 @@
                     line-height: normal;
                 }
 
+                @include screen-x(300px, 342px) {
+                    font-size: 30px;
+                }
+
                 @include screen(medium) {
                     font-size: 3em;
                     line-height: 52px;
+                }
+
+                @include screen-x(1024px, 1110px) {
+                    font-size: 3em;
                 }
 
                 span {
@@ -122,9 +130,14 @@
                 margin-top: 0.5rem;
             }
 
-            @include screen(medium){
-             width: 57%;   
+            @include screen(medium) {
+                width: 57%;
             }
+
+            @include screen-x(1024px, 1110px) {
+                width: 45%;
+            }
+
 
             p {
                 color: $Davys-grey;
