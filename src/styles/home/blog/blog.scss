@@ -1,0 +1,31 @@
+#blog {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 0.6rem;
+
+    .section-header {
+        .title {
+            height: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-weight: 700;
+                margin-bottom: 0;
+                color: $Black;
+            }
+        }
+
+        .text {
+            margin-top: 12px;
+            text-align: center;
+
+            p {
+                color: $Davys-grey;
+                text-align: center;
+            }
+        }
+    }
+}

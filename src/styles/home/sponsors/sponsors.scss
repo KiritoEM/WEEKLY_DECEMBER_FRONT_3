@@ -5,7 +5,7 @@
     overflow: hidden;
     margin-top: -10rem;
     padding-top: 3rem;
-    padding-bottom: 5rem;
+    padding-bottom: 0;
     @include container;
 
     .section-header {
@@ -47,11 +47,11 @@
 
     .section-content{
         width: 100%;
-        margin-top: 6rem;
+        margin-top: -2rem;
 
          .shape-1{
             position: relative;
-            top: 4rem;
+            top: 3.5rem;
             left: 50px;
             text-align: end;
             z-index: 40;

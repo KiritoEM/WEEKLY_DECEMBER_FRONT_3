@@ -8,6 +8,7 @@ import Scribble2 from "@/components/Scribble2";
 import Features from "@/components/Features";
 import Episodes from "@/components/Episodes";
 import Sponsors from "@/components/Sponsors";
+import Blog from "@/components/Blog";
 
 const home = (): JSX.Element => {
   return (
@@ -25,6 +26,8 @@ const home = (): JSX.Element => {
         <Episodes />
         <Scribble2 top="-9rem" />
         <Sponsors />
+        <Scribble2 top="-2rem" />
+        <Blog />
       </section>
     </Layout>
   );
