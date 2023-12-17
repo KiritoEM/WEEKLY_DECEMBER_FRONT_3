@@ -1,0 +1,37 @@
+#footer {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    background-color: #fff;
+    @include container;
+
+    .section-info {
+
+        .logo-copyright {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            gap: 15px;
+
+            .copyright {
+
+                p {
+                    color: $Davys-grey;
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .text{
+
+            p{
+                color: $Davys-grey;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+}
