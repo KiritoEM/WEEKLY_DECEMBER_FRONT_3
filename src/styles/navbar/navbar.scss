@@ -1,4 +1,6 @@
-@import "./navresponsive.scss";
+@import "./nav-responsive.scss";
+@import "./menu-icons.scss";
+@import "./overlay.scss";
 
 #nav {
    width: 100%;
@@ -21,7 +23,15 @@
       @include screen(small){
          position: fixed;
          background-color: $Champagne;
-         box-shadow: 0 3px 5px rgba(143, 139, 139, 0.411);
+         box-shadow: 0 2px 4px rgba(143, 139, 139, 0.411);
+         height: 4.5rem;
+      }
+
+      @include screen(medium){
+         position: fixed;
+         background-color: $Champagne;
+         box-shadow: 0 2px 4px rgba(143, 139, 139, 0.411);
+         height: 4.5rem;
       }
 
       #nav-header {

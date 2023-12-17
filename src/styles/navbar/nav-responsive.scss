@@ -5,16 +5,16 @@
     align-items: center;
     white-space: nowrap;
     background-color: $Champagne;
-    z-index: 80;
+    z-index: 400;
     position: fixed;
-    width: 100%;
-    top: 5rem;
-    padding-top: 2rem;
+    top: 0;
+    padding-top: 7rem;
+    overflow: hidden;
 
     ul {
         display: flex;
         flex-direction: column;
-        gap: 37px;
+        gap: 28px;
         margin-bottom: 0;
         padding-left: 0;
         text-align: center;
@@ -32,12 +32,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 3rem;
+        margin-top: 2.4rem;
         gap: 30px;
 
         .btn {
             text-transform: uppercase;
-            font-size: 12.7px;
+            font-size: 11.4px;
             padding-top: 7px;
             padding-bottom: 7px;
             padding-left: 22px;
@@ -57,4 +57,18 @@
             color: #fff;
         }
     }
+}
+
+.open-menu{
+    width: 100%;
+    transition: 0.32s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+     @include screen(medium){
+        width: 50%;
+     }
+}
+
+.close-menu{
+    width: 0;
+    transition: 0.32s cubic-bezier(0.075, 0.82, 0.165, 1);
 }

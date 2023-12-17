@@ -1,9 +1,15 @@
 import navData from "@/helper/dataHelper/navData";
+import { useNav } from "@/hooks/useNav";
 
 const NavResponsive = (): JSX.Element => {
   const { menuItems, navButtons } = navData();
+  const { openMenu } = useNav();
   return (
-    <div className="menu-responsive d-lg-none">
+    <div
+      className={`menu-responsive d-lg-none ${
+        openMenu ? "open-menu" : "close-menu"
+      }`}
+    >
       <ul>
         {menuItems.map((item, index) => (
           <li key={index}>

@@ -1,0 +1,17 @@
+.menu-icons{
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .icon{
+        font-size: 16px;
+        padding: 11px;
+        border-radius: 50%;
+        border: 3.6px solid $Vermillion;
+
+         &:hover{
+            background-color: $Vermillion;
+            color: $Black;
+         }
+    }
+}

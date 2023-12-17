@@ -1,6 +1,7 @@
 import { Fragment, ReactNode } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AppProvider from "./AppProvider";
 
 interface Ichildren {
   children: ReactNode;
@@ -8,11 +9,11 @@ interface Ichildren {
 
 const Layout: React.FC<Ichildren> = ({ children }): JSX.Element => {
   return (
-    <Fragment>
+    <AppProvider>
       <Navbar />
       {children}
       <Footer />
-    </Fragment>
+    </AppProvider>
   );
 };
 
