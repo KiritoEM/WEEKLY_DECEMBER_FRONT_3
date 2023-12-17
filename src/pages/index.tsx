@@ -9,6 +9,8 @@ import Features from "@/components/Features";
 import Episodes from "@/components/Episodes";
 import Sponsors from "@/components/Sponsors";
 import Blog from "@/components/Blog";
+import Scribble3 from "@/components/Scribble3";
+import CTA from "@/components/CTA";
 
 const home = (): JSX.Element => {
   return (
@@ -28,6 +30,8 @@ const home = (): JSX.Element => {
         <Sponsors />
         <Scribble2 top="-2rem" />
         <Blog />
+        <Scribble3 top="" />
+        <CTA />
       </section>
     </Layout>
   );

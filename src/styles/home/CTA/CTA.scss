@@ -1,0 +1,60 @@
+#CTA {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    gap: 20px;
+    background-color: $alice;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    @include container;
+
+    .shape-1 {
+        width: 30%;
+    }
+
+    .shape-2 {
+        width: 30%;
+    }
+
+    .content {
+        width: 40%;
+        text-align: center;
+
+         .beta{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            p{
+                color: $Vermillion;
+                font-weight: 600;
+                border: 1px solid $Vermillion;
+                width: 60px;
+                text-align: center;
+                font-size: 14px;
+                border-radius: 4px;
+                padding: 7px;
+            }
+         }
+
+         .title{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+            h1{
+                color: $Black;
+                font-weight: 700;
+                width: 90%;
+            }
+         }
+
+         .text{
+
+            p{
+                color: $Davys-grey;
+                margin-top: 1rem;
+            }
+         }
+    }
+}
