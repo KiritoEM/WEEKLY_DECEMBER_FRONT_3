@@ -1,0 +1,24 @@
+.menu-responsive {
+    height: max-content;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    background-color: #fff;
+    z-index: 80;
+    position: fixed;
+    top: 5rem;
+
+    ul {
+       display: flex;
+       flex-direction: column;
+       gap: 37px;
+       margin-bottom: 0;
+
+       li {
+          margin-bottom: 0;
+          font-size: 13px;
+          color: $Black;
+          font-weight: 700;
+       }
+    }
+ }

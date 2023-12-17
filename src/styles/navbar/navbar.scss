@@ -1,6 +1,9 @@
+@import "./navresponsive.scss";
+
 #nav {
    width: 100%;
-   overflow: hidden;
+   overflow-x: hidden;
+   overflow-y: visible;
 
    &__container {
       width: 100%;
@@ -13,6 +16,12 @@
       flex-direction: row;
       justify-content: space-between;
       @include container;
+      z-index: 500;
+
+      @include screen(small){
+         position: fixed;
+         background-color: $Champagne;
+      }
 
       #nav-header {
          height: 100%;
