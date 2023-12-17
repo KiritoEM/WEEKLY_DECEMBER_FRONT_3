@@ -16,6 +16,7 @@
         img {
             width: 120px;
             object-fit: contain;
+            @include bounce;
         }
     }
 }
@@ -38,6 +39,7 @@
         img {
             width: 120px;
             object-fit: contain;
+            @include bounce;
         }
     }
 }

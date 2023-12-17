@@ -31,6 +31,7 @@ export default function Document() {
           integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
           crossOrigin="anonymous"
         ></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </Head>
       <body>
         <Main />

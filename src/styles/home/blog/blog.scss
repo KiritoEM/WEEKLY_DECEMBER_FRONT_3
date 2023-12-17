@@ -52,7 +52,6 @@
             position: relative;
             top: 4rem;
             left: -56px;
-            z-index: 40;
 
             @include screen(small) {
                 left: -27px;
@@ -65,6 +64,7 @@
 
             img {
                 width: 135px;
+                @include rotation;
 
                 @include screen(small) {
                     width: 86px;
@@ -80,7 +80,6 @@
             position: relative;
             top: -5.7rem;
             left: 90px;
-            z-index: 40;
             text-align: end;
 
             @include screen(small) {
@@ -95,6 +94,7 @@
 
             img {
                 width: 185px;
+                @include bounce;
 
                 @include screen(small) {
                     width: 110px;

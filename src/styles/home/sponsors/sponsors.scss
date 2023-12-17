@@ -29,6 +29,7 @@
 
                 img {
                     width: 90px;
+                    @include bounce;
 
                     @include screen(small) {
                         width: 70px;
@@ -75,6 +76,7 @@
              
              img{
                 width: 95px;
+                @include rotation;
 
                 @include screen(small) {
                     width: 65px;
@@ -95,6 +97,7 @@
              
              img{
                 width: 95px;
+                @include bounce;
 
                 @include screen(small) {
                     width: 70px;

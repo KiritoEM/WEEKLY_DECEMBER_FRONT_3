@@ -39,6 +39,8 @@
         img {
             width: 100%;
             object-fit: contain;
+
+            @include bounce;
         }
     }
 
@@ -64,6 +66,7 @@
         img {
             width: 138px;
             object-fit: contain;
+            @include bounce;
 
             @include screen(small) {
                 width: 50px;

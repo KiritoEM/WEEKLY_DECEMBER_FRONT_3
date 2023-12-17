@@ -72,6 +72,7 @@
             img {
                width: 80px;
                object-fit: contain;
+               @include bounce;
 
                @include screen(small){
                   width: 54px;
@@ -204,6 +205,7 @@
             img {
                width: 90px;
                object-fit: contain;
+               @include rotation;
 
                @include screen(small){
                   width: 57px;

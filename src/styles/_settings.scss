@@ -5,37 +5,75 @@ $Pewter-blue: #81ADC8;
 $Champagne : #F7EDE8;
 $alice: #EDF3F7;
 
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Montserrat Alternates', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 @mixin screen($breakpoint) {
-    @if $breakpoint ==small {
-      @media (max-width: 767px) {
-        @content;
-      }
-    }
-  
-    @else if $breakpoint ==medium {
-      @media (min-width: 768px) and (max-width: 1023px) {
-        @content;
-      }
-    }
-  
-    @else if $breakpoint ==large {
-      @media (min-width: 1024px) {
-        @content;
-      }
-    }
-  }
-  
-  @mixin screen-x($min , $max) {
-    @media screen and (min-width: $min) and (max-width: $max) {
+  @if $breakpoint ==small {
+    @media (max-width: 767px) {
       @content;
     }
   }
-  
+
+  @else if $breakpoint ==medium {
+    @media (min-width: 768px) and (max-width: 1023px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint ==large {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+}
+
+@mixin screen-x($min , $max) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin bounce {
+  @keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+
+    40% {
+      transform: translateY(-35px);
+    }
+
+    60% {
+      transform: translateY(-17px);
+    }
+  }
+
+  animation: bounce 1.55s infinite;
+
+}
+
+@mixin rotation {
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  animation: rotation 4s linear infinite;
+
+}
