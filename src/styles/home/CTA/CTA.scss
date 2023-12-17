@@ -8,12 +8,26 @@
     background-color: $alice;
     padding-top: 8rem;
 
+    @include screen(small){
+        flex-direction: column;
+        height: max-content;
+        padding-bottom: 4rem;
+    }
+
+    @include screen(medium){
+        height: 38rem;
+    }
+
     .shape-1 {
         width: 30%;
         height: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
+
+        @include screen(small){
+         display: none;
+        }
 
         img {
             width: 100%;
@@ -27,6 +41,10 @@
         display: flex;
         justify-content: flex-end;
 
+        @include screen(small){
+         display: none;        
+        }
+
 
         img {
             width: 100%;
@@ -38,6 +56,10 @@
     .content {
         width: 40%;
         text-align: center;
+
+        @include screen(small){
+            width: 100%;               
+        }
 
         .section-header {
             .beta {
@@ -66,6 +88,10 @@
                     color: $Black;
                     font-weight: 700;
                     width: 90%;
+
+                    @include screen(medium){
+                        font-size: 30px;   
+                    }
                 }
             }
 
