@@ -78,6 +78,11 @@
                     background-color: $Black;
                     box-shadow: 4px 4px rgb(189, 187, 187);
                     color: #fff;
+
+                     @include screen(small){
+                        padding: 13px 26px;
+                        font-size: 11.8px;
+                     }
                 }
             }
 
