@@ -68,6 +68,10 @@
             @include screen(small) {
                 width: 50px;
             }
+
+            @include screen(medium){
+                width: 110px;
+            }
         }
     }
 
