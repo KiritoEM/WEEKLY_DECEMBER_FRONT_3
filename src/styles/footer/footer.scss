@@ -49,9 +49,32 @@
                 font-weight: 500;
             }
 
-            #item-2{
+            #colored-item{
                 color: $Vermillion;
             }
          }
+    }
+
+    .section-plateform{
+
+        p{
+            color: $Davys-grey;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .icons{
+            display: flex;
+            gap: 24px;
+
+             img{
+                width: 72px;
+                object-fit: contain;
+             }
+
+             #icon-1{
+                width: 114px;
+             }
+        }
     }
 }
