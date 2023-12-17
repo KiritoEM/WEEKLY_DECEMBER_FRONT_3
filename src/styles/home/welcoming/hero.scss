@@ -6,10 +6,16 @@
     padding-top: 4rem;
     padding-bottom: 7rem;
 
-    @include screen(small){
-      padding-bottom: 5rem;           
-      height: max-content;
-      min-height: auto;
+    @include screen(small) {
+        padding-bottom: 5rem;
+        height: max-content;
+        min-height: auto;
+    }
+
+    @include screen(medium) {
+        min-height: auto;
+        height: max-content;
+        padding-bottom: 5.6rem;
     }
 
     .hero-shape1 {
@@ -20,10 +26,14 @@
         position: relative;
         top: 50px;
 
-        @include screen(small){
-            width: 135px;   
-            position: relative;      
+        @include screen(small) {
+            width: 132px;
+            position: relative;
             left: 10px;
+        }
+
+        @include screen(medium) {
+            width: 16%;
         }
 
         img {
@@ -42,17 +52,21 @@
         position: relative;
         top: 50px;
 
-        @include screen(small){
-          width: 135px;     
-          right: 10px;    
+        @include screen(small) {
+            width: 132px;
+            right: 10px;
+        }
+
+        @include screen(medium) {
+            width: 15%;
         }
 
         img {
             width: 138px;
             object-fit: contain;
 
-            @include screen(small){
-                width: 50px;       
+            @include screen(small) {
+                width: 50px;
             }
         }
     }
@@ -65,8 +79,12 @@
         align-items: center;
         justify-content: flex-start;
 
-        @include screen(small){
-            width: 200%;           
+        @include screen(small) {
+            width: 100%;
+        }
+
+        @include screen(medium){
+          width: 70%;       
         }
 
         .title {
@@ -78,9 +96,14 @@
                 text-align: center;
                 line-height: 64px;
 
-                @include screen(small){
+                @include screen(small) {
                     font-size: 34px;
                     line-height: normal;
+                }
+
+                @include screen(medium) {
+                    font-size: 3em;
+                    line-height: 52px;
                 }
 
                 span {
@@ -94,9 +117,13 @@
             width: 37%;
             text-align: center;
 
-            @include screen(small){
-                width: 100%;    
-                margin-top: 0.5rem;   
+            @include screen(small) {
+                width: 100%;
+                margin-top: 0.5rem;
+            }
+
+            @include screen(medium){
+             width: 57%;   
             }
 
             p {
@@ -107,7 +134,7 @@
         .button {
             margin-top: 2rem;
 
-            @include screen(small){
+            @include screen(small) {
                 margin-top: 0.8rem;
             }
 
@@ -124,7 +151,7 @@
                 box-shadow: 4px 4px rgb(189, 187, 187);
                 color: #fff;
 
-                @include screen(small){
+                @include screen(small) {
                     padding: 14px 44px;
                     font-size: 11.6px;
                 }
