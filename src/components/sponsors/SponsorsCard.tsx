@@ -3,7 +3,7 @@ interface IsponsorsProps {
   title: string;
   price: string;
   points: Ipoints[];
-  important: string
+  important?: string
 }
 
 interface Ipoints {

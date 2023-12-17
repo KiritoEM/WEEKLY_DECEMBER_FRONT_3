@@ -48,5 +48,28 @@
     .section-content{
         width: 100%;
         margin-top: 6rem;
+
+         .shape-1{
+            position: relative;
+            top: 4rem;
+            left: 50px;
+            text-align: end;
+            z-index: 40;
+             
+             img{
+                width: 95px;
+             }
+         }
+
+         .shape-2{
+            position: relative;
+            top: -4rem;
+            left: -60px;
+            z-index: 40;
+             
+             img{
+                width: 95px;
+             }
+         }
     }
 }

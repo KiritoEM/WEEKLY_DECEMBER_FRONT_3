@@ -1,6 +1,10 @@
 .sponsors-card {
     width: 100%;
     height: max-content;
+    position: relative;
+    z-index: 70;
+    background-color: #fff;
+    border-radius: 7px;
 
 
     .price {
