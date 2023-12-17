@@ -20,41 +20,86 @@
         width: 40%;
         text-align: center;
 
-         .beta{
+        .section-header {
+            .beta {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                p {
+                    color: $Vermillion;
+                    font-weight: 600;
+                    border: 1px solid $Vermillion;
+                    width: 60px;
+                    text-align: center;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    padding: 7px;
+                }
+            }
+
+            .title {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+
+                h1 {
+                    color: $Black;
+                    font-weight: 700;
+                    width: 90%;
+                }
+            }
+
+            .text {
+
+                p {
+                    color: $Davys-grey;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .section-download {
             width: 100%;
-            display: flex;
-            justify-content: center;
+            margin-top: 4rem;
 
-            p{
-                color: $Vermillion;
-                font-weight: 600;
-                border: 1px solid $Vermillion;
-                width: 60px;
-                text-align: center;
-                font-size: 14px;
-                border-radius: 4px;
-                padding: 7px;
+            .buttons {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+                margin-left: 10%;
+
+                .button {
+                    width: max-content;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .btn {
+                        text-transform: uppercase;
+                        font-size: 12.4px;
+                        padding: 16px 32px;
+                        font-weight: bold;
+                        border-radius: 7px;
+                        background-color: $Black;
+                        box-shadow: 4px 4px rgb(189, 187, 187);
+                        color: #fff;
+                    }
+                }
+
+                .shape {
+                    width: max-content;
+                    position: relative;
+                    top: -55px;
+                    right: 27px;
+
+                    img {
+                        width: 80px;
+                    }
+                }
             }
-         }
-
-         .title{
-            display: flex;
-            width: 100%;
-            justify-content: center;
-
-            h1{
-                color: $Black;
-                font-weight: 700;
-                width: 90%;
-            }
-         }
-
-         .text{
-
-            p{
-                color: $Davys-grey;
-                margin-top: 1rem;
-            }
-         }
+        }
     }
 }

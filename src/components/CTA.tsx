@@ -16,6 +16,16 @@ const CTA = (): JSX.Element => {
             <p>We just launched our podcast app!</p>
           </div>
         </div>
+        <div className="section-download">
+          <div className="buttons">
+            <div className="button">
+              <button className="btn">DOWNLOAD NOW</button>
+            </div>
+            <div className="shape">
+              <img src="/images/Sparkle.png" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
       <div className="shape-2"></div>
     </section>
